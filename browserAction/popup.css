@@ -1,0 +1,8 @@
+/*
+  The page supports both light and dark color schemes,
+  and the page author prefers light.
+  https://web.dev/color-scheme/
+*/
+:root {
+  color-scheme: light dark;
+}
