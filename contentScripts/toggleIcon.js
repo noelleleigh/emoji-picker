@@ -1,4 +1,4 @@
-// Update the extension icon
+// Update the extension icon when color scheme changes
 // https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Testing_media_queries#Receiving_query_notifications
 
 // Create the query list.
