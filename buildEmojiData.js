@@ -6,9 +6,12 @@ import fs from "fs";
 import path from "path";
 import xml2js from "xml2js";
 
+/**
+ * Open an XML file, parse it to a JS object, and return a simplified version.
+ * @param {String} filePath
+ * @returns {Promise<String>}
+ */
 const parseAnnotations = async (filePath) => {
-  console.log(filePath);
-
   const fileContents = await fs.promises.readFile(filePath, {
     encoding: "utf-8",
   });
