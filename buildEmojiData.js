@@ -32,7 +32,7 @@ const parseAnnotations = async (filePath) => {
   const filteredAnnotations = annotations.filter(
     (annotation) => !annotation.type
   );
-  parsedContents.ldml.annotations[0].annotation = filteredAnnotations;
+  parsedContents.ldml.annotations = filteredAnnotations;
 
   return parsedContents;
 };
@@ -65,7 +65,7 @@ const main = async () => {
       const jsonFilePath = path.format(jsonPathObject);
       await fs.promises.writeFile(
         jsonFilePath,
-        JSON.stringify(result, null, 2),
+        JSON.stringify(result),
         "utf-8"
       );
     }
